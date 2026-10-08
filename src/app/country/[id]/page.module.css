@@ -1,0 +1,143 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  padding: 24px 20px;
+}
+
+.backLink {
+  color: #a0b4ff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.main {
+  flex: 1;
+  padding: 32px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.infoCard {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 28px;
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  margin: 0 0 16px 0;
+  color: #333;
+}
+
+.infoList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.infoList li {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.infoList li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.label {
+  color: #666;
+  font-weight: 500;
+}
+
+.value {
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.citiesSection {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cityList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cityItem {
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.cityItem:hover {
+  background: #f5f7fa;
+}
+
+.cityLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cityName {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.cityMeta {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.footer {
+  background: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .cityLink {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+}

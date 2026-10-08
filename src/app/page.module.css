@@ -1,0 +1,98 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0;
+  opacity: 0.85;
+  font-size: 1.1rem;
+}
+
+.main {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sectionTitle {
+  font-size: 1.3rem;
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.countryList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.countryItem {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.countryItem:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.countryLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.countryName {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.countryMeta {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.footer {
+  background: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .countryLink {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
